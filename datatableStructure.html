@@ -1,0 +1,18 @@
+<template>
+    <lightning-card title="Book Details">
+            <lightning-datatable 
+               lwc:ref="dt"
+               key-field="id"
+               columns={columns}
+               data={books}
+               >
+            </lightning-datatable>
+
+            <lightning-button
+                label="Get Selected Rows"
+                onclick={getSelectedRows}>
+            </lightning-button>
+
+            <p>{selectedStr}</p>
+    </lightning-card>
+</template>
